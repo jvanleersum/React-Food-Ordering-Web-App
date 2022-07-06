@@ -14,17 +14,15 @@ const Cart = () => {
 
   return (
     <Modal>
-      <Card>
-        <ul className={classes["cart-items"]}>{cardItems}</ul>
-        <div className={classes.total}>
-          <span>Total Amount</span>
-          <span>$32.99</span>
-        </div>
-        <section className={classes.actions}>
-          <button className={classes["button--alt"]}>Return</button>
-          <button>Place Order</button>
-        </section>
-      </Card>
+      <ul className={classes["cart-items"]}>{cardItems}</ul>
+      <div className={classes.total}>
+        <span>Total Amount</span>
+        <span>$32.99</span>
+      </div>
+      <section className={classes.actions}>
+        <button className={classes["button--alt"]}>Close</button>
+        <button className={classes.button}>Order</button>
+      </section>
     </Modal>
   );
 };
